@@ -68,10 +68,10 @@ public class HelperMethods {
 
     static double calcDistance(int px1, int py1, int px2, int py2)  {
 
-        /*double dx = (double) px1 - px2;
+        double dx = (double) px1 - px2;
         double dy = (double) py1 - py2;
-        return Math.sqrt(dx * dx + dy * dy);*/
+        return Math.sqrt(dx * dx + dy * dy);
 
-        return Math.sqrt((px1 - px2) * (px1 - px2) + (py1 - py2) * (py1 - py2));
+        //return Math.sqrt((px1 - px2) * (px1 - px2) + (py1 - py2) * (py1 - py2));
     }
 }
