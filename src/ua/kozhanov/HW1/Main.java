@@ -1,4 +1,4 @@
-package Class1;
+package ua.kozhanov.HW1;
 
 import java.time.LocalDateTime;
 import java.util.Scanner;
@@ -16,7 +16,7 @@ public class Main {
     static void outputNameDate() {
 
         LocalDateTime date = LocalDateTime.now();
-        System.out.println("Name: " + "Adrian" + ", Surname: " + "Kozhanov" + ", Current Date and Time: " + date.toString());
+        System.out.println("Name: " + "Adrian" + ", Surname: " + "Kozhanov" + ", Current Date and Time: " + date);
 
     }
 

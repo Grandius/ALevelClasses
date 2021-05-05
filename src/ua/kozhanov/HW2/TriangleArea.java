@@ -1,4 +1,4 @@
-package Class2;
+package ua.kozhanov.HW2;
 
 //Заданы плоские декартовы координаты треугольника. Найти площадь треугольника.
 public class TriangleArea {

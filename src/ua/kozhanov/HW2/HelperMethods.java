@@ -1,4 +1,4 @@
-package Class2;
+package ua.kozhanov.HW2;
 
 import java.util.Scanner;
 
@@ -74,4 +74,6 @@ public class HelperMethods {
 
         //return Math.sqrt((px1 - px2) * (px1 - px2) + (py1 - py2) * (py1 - py2));
     }
+
+
 }

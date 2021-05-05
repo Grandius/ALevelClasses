@@ -1,4 +1,4 @@
-package Class2;
+package ua.kozhanov.HW2;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ public class Homework2 {
         System.out.println("Enter an integer number");
         checkIfNumberIsEven(HelperMethods.returnInteger(input));
         input.nextLine();
-        doTheSmallestAbs(input);
+        calcTheSmallestAbs(input);
         input.close();
     }
 
@@ -25,7 +25,7 @@ public class Homework2 {
     }
 
     //Задание по выведению на экран меньшего по модулю из 3 переданных в метод вещественных чисел (с использованием тернарной операции)
-    static void doTheSmallestAbs(Scanner sc) {
+    static void calcTheSmallestAbs(Scanner sc) {
 
         double firstNum;
         double secondNum;
