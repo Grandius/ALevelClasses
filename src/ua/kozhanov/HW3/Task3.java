@@ -9,24 +9,24 @@ public class Task3 {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
+        System.out.println("Please input some line");
         String text = input.nextLine();
-        System.out.println("The string " + "'" + text + "'" + " has " + (calcSpaces(text) + 1) + " word(s)");
-        System.out.println("The string " + "'" + text + "'" + " has " + calcWords(text) + " word(s) (counted with calcWords function)");
+        System.out.println("The string " + "'" + text + "'" + " has " + calcWords(text) + " word(s)");
 
-    }
-
-    static int calcSpaces(String input) {
-
-        int countSpaces = 0;
-        for (char element : input.toCharArray()) {
-            if (element == ' ') countSpaces++;
-        }
-
-        return countSpaces;
     }
 
     static int calcWords(String input) {
 
-        return input.split(" ").length;
+        //String[] values = input.replaceAll("^[,\\s]+", "").split("[,\\s]+"); this variant works the same
+        String[] values = input.split(" ");
+        int countWords = 0;
+        String[] properWords = new String[values.length];
+        for (String value : values) {
+            if (((!value.equals("")) && (value != null) && (value.matches("^[a-zA-Z]*$")) && (!value.matches("^[0-9]*$")))) {
+                countWords++;
+            }
+        }
+
+        return countWords;
     }
 }

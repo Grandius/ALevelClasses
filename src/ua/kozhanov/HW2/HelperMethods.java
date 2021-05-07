@@ -25,7 +25,7 @@ public class HelperMethods {
         return retNum;
     }
 
-    static int returnInteger(Scanner sc) {
+    public static int returnInteger(Scanner sc) {
 
         int retInt = 0;
         if (sc.hasNextInt()) {

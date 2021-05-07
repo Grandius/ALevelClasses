@@ -1,5 +1,7 @@
 package ua.kozhanov.HW3;
 
+import ua.kozhanov.HW2.HelperMethods;
+
 import java.util.Scanner;
 
 public class Task4 {
@@ -9,38 +11,29 @@ public class Task4 {
 
         Scanner input = new Scanner(System.in);
         int a = (int) (Math.random() * 100);
+
         System.out.println("Please input an integer number");
-        checkInputForGuessingTheNumber(input, a);
-
-
-    }
-
-    static int returnInteger(Scanner sc) {
-
-        int retInt = 0;
-        if (sc.hasNextInt()) {
-            retInt = sc.nextInt();
-            sc.nextLine();
-        } else if (!sc.hasNextInt()) {
-            System.out.println("Error has occurred, please input correct integer number");
-            sc.nextLine();
-            retInt = returnInteger(sc);
-        }
-        return retInt;
-    }
-
-    static void checkInputForGuessingTheNumber(Scanner sc, int compNumber) {
-
-        int tempInt;
+        String temp;
         do {
-            tempInt = returnInteger(sc);
-            if (tempInt > compNumber) {
-                System.out.println("Less then " + tempInt);
-            } else if (tempInt < compNumber) {
-                System.out.println("More then " + tempInt);
-            }
+
+            temp = checkInputForGuessingTheNumber(input, a);
+            System.out.println(temp);
         }
-        while (tempInt != compNumber);
-        System.out.println("Correct");
+        while (temp.compareTo("Correct") != 0);
+
+    }
+
+    static String checkInputForGuessingTheNumber(Scanner sc, int compNumber) {
+
+        int tempInt = HelperMethods.returnInteger(sc);
+        String result;
+        if (tempInt > compNumber) {
+            result = "The computer number is less then " + tempInt;
+        } else if (tempInt < compNumber) {
+            result = "The computer number is more then " + tempInt;
+        } else {
+            result = "Correct";
+        }
+        return result;
     }
 }
