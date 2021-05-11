@@ -25,18 +25,17 @@ public class Task1 {
     static void calcArithmAndGeomMeans(int[] inputArray) {
 
         long sum = 0;
-        //long product = 1L;
-        double product = 1.0;
+        long product = 1L;
 
 
         for (int j : inputArray) {
 
             sum += j;
-            product = product*j;
+            product = product * j;
 
         }
 
-        System.out.println("inputArray of "+inputArray.length+" elements "+ "has array sum " + sum + " and product " + product);
+        System.out.println("inputArray of " + inputArray.length + " elements " + "has array sum " + sum + " and product " + product);
         double meanArithmetic = (double) sum / inputArray.length;
         double root = 1.0 / inputArray.length;
         double meanGeometric = Math.pow(product, root);
