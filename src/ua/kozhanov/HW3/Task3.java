@@ -20,9 +20,8 @@ public class Task3 {
         //String[] values = input.replaceAll("^[,\\s]+", "").split("[,\\s]+"); this variant works the same
         String[] values = input.split(" ");
         int countWords = 0;
-        String[] properWords = new String[values.length];
         for (String value : values) {
-            if (((!value.equals("")) && (value != null) && (value.matches("^[a-zA-Z]*$")) && (!value.matches("^[0-9]*$")))) {
+            if (!value.equals("") && value.matches("^[a-zA-Z]*$") && !value.matches("^[0-9]*$")) {
                 countWords++;
             }
         }
