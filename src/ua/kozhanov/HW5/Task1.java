@@ -17,25 +17,24 @@ public class Task1 {
 
     }
 
-    static void fillArray(int[][] testArray) {
+    static void fillArray(int[][] inputArray) {
 
         int temp = 0;
-        for (int i = 0; i < testArray.length; i++) {
+        for (int i = 0; i < inputArray.length; i++) {
 
             if (i % 2 == 0) {
 
-                for (int j = 0; j < testArray[i].length; j++) {
-                    testArray[i][j] = temp;
+                for (int j = 0; j < inputArray[i].length; j++) {
+                    inputArray[i][j] = temp;
                     temp++;
                 }
             } else {
 
-                for (int j = 0; j < testArray[i].length; j++) {
-                    testArray[i][j] = -temp;
+                for (int j = 0; j < inputArray[i].length; j++) {
+                    inputArray[i][j] = -temp;
                     temp++;
                 }
             }
         }
     }
-
 }

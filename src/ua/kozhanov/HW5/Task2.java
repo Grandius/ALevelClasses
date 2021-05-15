@@ -21,14 +21,13 @@ public class Task2 {
 
     }
 
-    static int[] fillArray(int[] inputArray, int bound) {
+    static void fillArray(int[] inputArray, int bound) {
 
         for (int i = 0; i < inputArray.length; i++) {
 
             inputArray[i] = new Random().nextInt(bound);
 
         }
-        return inputArray;
     }
 
     static boolean checkForDesc(int[] inputArray) {
