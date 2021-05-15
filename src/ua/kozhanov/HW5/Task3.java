@@ -8,7 +8,7 @@ public class Task3 {
     public static void main(String[] args) {
 
         int[][] initMatrix = new int[5][5];
-        fillArray(initMatrix, 50);
+        fillMatrix(initMatrix, 50);
         System.out.println("Initial matrix: ");
         for (int[] t : initMatrix) {
             System.out.println(Arrays.toString(t));
@@ -24,7 +24,7 @@ public class Task3 {
 
     }
 
-    static void fillArray(int[][] inputMatrix, int bound) {
+    static void fillMatrix(int[][] inputMatrix, int bound) {
 
         for (int i = 0; i < inputMatrix.length; i++) {
 

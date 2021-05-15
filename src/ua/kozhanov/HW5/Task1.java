@@ -7,9 +7,9 @@ public class Task1 {
     //Заполнить двумерный массив значениями индекса, при этом каждую вторую строку - отрицательными значениями
     public static void main(String[] args) {
 
-        int[][] array = new int[5][10];
-        fillArray(array);
-        for (int[] tar : array) {
+        int[][] matrix = new int[5][10];
+        fillMatrix(matrix);
+        for (int[] tar : matrix) {
 
             System.out.println(Arrays.toString(tar));
 
@@ -17,21 +17,21 @@ public class Task1 {
 
     }
 
-    static void fillArray(int[][] inputArray) {
+    static void fillMatrix(int[][] inputMatrix) {
 
         int temp = 0;
-        for (int i = 0; i < inputArray.length; i++) {
+        for (int i = 0; i < inputMatrix.length; i++) {
 
             if (i % 2 == 0) {
 
-                for (int j = 0; j < inputArray[i].length; j++) {
-                    inputArray[i][j] = temp;
+                for (int j = 0; j < inputMatrix[i].length; j++) {
+                    inputMatrix[i][j] = temp;
                     temp++;
                 }
             } else {
 
-                for (int j = 0; j < inputArray[i].length; j++) {
-                    inputArray[i][j] = -temp;
+                for (int j = 0; j < inputMatrix[i].length; j++) {
+                    inputMatrix[i][j] = -temp;
                     temp++;
                 }
             }
