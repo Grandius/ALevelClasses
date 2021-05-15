@@ -9,13 +9,13 @@ public class Task3 {
 
         int[][] initMatrix = new int[5][5];
         fillMatrix(initMatrix, 50);
-        System.out.println("Initial matrix: ");
+        System.out.println("Initial matrix:");
         for (int[] t : initMatrix) {
             System.out.println(Arrays.toString(t));
         }
 
         int[][] swapMatrix = swapMatrix(initMatrix);
-        System.out.println("Swapped matrix: ");
+        System.out.println("Swapped matrix:");
         for (int[] p : swapMatrix) {
 
             System.out.println(Arrays.toString(p));
