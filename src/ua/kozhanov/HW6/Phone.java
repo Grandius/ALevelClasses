@@ -44,13 +44,11 @@ public class Phone {
     }
 
     Phone() {
-
     }
 
     void receiveCall(String name) {
         System.out.println("Звонит " + name);
     }
-    
 
     @Override
     public String toString() {
@@ -60,6 +58,4 @@ public class Phone {
                 ", weight=" + weight +
                 '}';
     }
-
-
 }
