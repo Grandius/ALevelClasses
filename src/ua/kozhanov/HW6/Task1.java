@@ -13,7 +13,6 @@ public class Task1 {
         phone3.setModel("Realme");
         phone3.setWeight(187.89);
 
-
         System.out.println("Phone 1 number is " + phone1.getNumber());
         phone1.receiveCall("Bob");
         System.out.println("Phone 2 number is " + phone2.getNumber());
