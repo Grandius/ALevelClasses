@@ -12,8 +12,15 @@ public class Task2 {
         studAspirs[4] = new Aspirant("Edna", "Edelstein", "Group 2", 5.0, true);
         studAspirs[5] = new Student("Michael", "Dillinger", "Group 4", 4.0);
 
+        String position;
         for (Student std : studAspirs) {
-            System.out.println("Student " + std.getLastName() + " has scholarship of " + std.getScholarship() + " hryvnias.");
+
+            if (std instanceof Aspirant) {
+                position = "Aspirant";
+            } else {
+                position = "Student";
+            }
+            System.out.println(position+" " + std.getLastName() + " has scholarship of " + std.getScholarship() + " hryvnias.");
         }
     }
 }
