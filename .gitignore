@@ -1,5 +1,5 @@
 # Project exclude paths
 /out/
-/src/ua/kozhanov/Lectures/Lecture5.java
+/src/ua/kozhanov/Lectures/
 /.idea/
 /ALevelClasses.iml
